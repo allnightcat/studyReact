@@ -1,7 +1,13 @@
 import './App.css';
+import TodoTemplate from './components/TodoTemplate';
+import TodoInsert from './components/TodoInsert';
 
 function App() {
-  return <div>To do list 만들기</div>;
+  return (
+    <TodoTemplate>
+      <TodoInsert />
+    </TodoTemplate>
+  );
 }
 
 export default App;
