@@ -7,6 +7,8 @@ import Profile from "./pages/Prpfile";
 import Article from "./pages/Article";
 import Articles from "./pages/Articles";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
+import MyPages from "./pages/MyPages";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path="/articles" element={<Articles />}>
         <Route path=":id" element={<Article />} />
       </Route>
+      <Route path="/login" element={<Login />} />
+      <Route path="/myPage" element={<MyPages />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
